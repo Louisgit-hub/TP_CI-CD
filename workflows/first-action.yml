@@ -1,0 +1,11 @@
+name: First GitHub Action
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run a one-line script
+        run: echo "Est-ce que ça fonctionne ? That is the question !"
